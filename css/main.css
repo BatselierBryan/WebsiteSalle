@@ -1,0 +1,259 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/Background/background-website.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  /*--- navigation bar ---*/
+  .navbar {
+    background: #33a4b0;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+    
+  }
+  .nav-link {
+    margin-right: 1em !important;
+  }
+  .nav-link:hover {
+    color: #000;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  .header {
+    background-image: url('../images/Background/header-background-index.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .description {
+    left: 35%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-65%, -55%);
+    text-align: left;
+  }
+  .description h1 {
+    color: #3cc0cf;
+  }
+  .description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  
+  .description button {
+    border:1px solid #33a4b0;
+    background:#33a4b0;
+    border-radius: 0;
+    color:#fff;
+  }
+  .description button:hover {
+    border:1px solid #fff;
+    background:#fff;
+    color:#000;
+  }
+  
+  .features {
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+  }
+  .feature-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .features img {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+  }
+  
+  .features .form-control,
+  .features input {
+      border-radius: 0;
+  }
+  .features .btn {
+    background-color: #33a4b0;
+    border: 1px solid #33a4b0;
+    color: #fff;
+    margin-top: 20px;
+  }
+  .features .btn:hover {
+    background-color: #333;
+    border: 1px solid #333;
+  }
+  
+  .page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+  }
+  .footer-copyright {
+    color: #666;
+    padding: 40px 0;
+  }
+  h3{
+      text-align: center;   
+  }
+  .regFormTitle{
+      text-align: left;
+  }
+  .robotoP{
+      /*--- Het gebruiken van een custom font in css (Wees zeker dat je de link ervan in de head section hebt toegevoegd) ---*/
+      font-family: 'Roboto', sans-serif;
+  }
+  .textShadow{
+      text-shadow: 2px 2px 0px #333;
+  }
+  .border{
+      border: 5px thick #333; !important
+      padding: 5px;
+      margin-top: -15px;
+      margin-bottom: 15px;
+      background-color: white; 
+  }
+  .leftAndBlue{
+      text-align: left;
+      margin-top: 5px;
+      margin-left: 5px; 
+      color: #0C85F6;
+  }
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -ms-transform: translate(0%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .introductie{
+      font-size: 20px;
+  }
+  .tips{
+      font-weight: bolder;
+  }
+  .shoveRight{
+      margin-left: 5px; 
+  }
+  @media (max-width: 575.98px) {
+    .description {
+      left: 0;
+      padding: 0 15px;
+      position: absolute;
+      top: 10%;
+      transform: none;
+      text-align: center;
+    }
+    
+    .description h1 {
+      font-size: 2em;
+    }
+    
+    .description p {
+      font-size: 1.2em;
+    }
+    
+    .features {
+      margin: 0;
+    }
+  }
+  
+  
+   /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contactForm {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  } 
+  
+   /* Dropdown Button */
+   .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;} 
