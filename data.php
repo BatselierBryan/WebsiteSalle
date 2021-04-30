@@ -25,18 +25,25 @@ if (!empty($_POST)) {
 
 
     if (empty($errors)) {
-        $toEmail = 'bryan.batselier@student.Hogent.be';
-        $emailSubject = 'New email from your contant form';
-        $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
+		
+		$to_email = 'bryan . batselier @ student . Hogent . be';
+		$subject = 'Testing PHP Mail';
+		$message = 'This mail is sent using the PHP mail function';
+		$headers = 'From: noreply @ company . com';
+		mail($to_email,$subject,$message,$headers);
+		
+        // $toEmail = 'bryan.batselier@student.Hogent.be';
+        // $emailSubject = 'New email from your contant form';
+        // $headers = ['From' => $email, 'Reply-To' => $toEmail, 'Content-type' => 'text/html; charset=iso-8859-1'];
 
-        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
-        $body = join(PHP_EOL, $bodyParagraphs);
+        // $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
+        // $body = join(PHP_EOL, $bodyParagraphs);
 
-        if (mail($toEmail, $emailSubject, $body, $headers)) {
-            header('Location: thank-you.html');
-        } else {
-            $errorMessage = 'Oops, something went wrong. Please try again later';
-        }
+        // if (mail($toEmail, $emailSubject, $body, $headers)) {
+            // header('Location: thank-you.html');
+        // } else {
+            // $errorMessage = 'Oops, something went wrong. Please try again later';
+        // }
     } else {
         $allErrors = join('<br/>', $errors);
         $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
