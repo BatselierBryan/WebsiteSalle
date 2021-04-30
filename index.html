@@ -7,14 +7,14 @@
 
     <!-- Links naar stylesheet (bootstrap en eigen) -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css\main.css">
     <!-- Link naar fontawesome -->
     <script src="https://kit.fontawesome.com/2cb40d6b15.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- Navbar start -->
 <nav class="navbar navbar-expand-md">
-    <i class="navbar-brand textShadow fas fa-location-arrow" href="#"> Salle</i>
+    <i class="navbar-brand textShadow fas fa-location-arrow" href="#"> Salles</i>
     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,7 +27,16 @@
                 <a class="nav-link" href="foto's.html">Foto's</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="regio.html">Regio</a>
+                <div class="dropdown">
+                    <a class="nav-link dropbtn" href="regio.html">Regio
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="RegioSubPages/sight-seeing.html">Sight-seeing</a>
+                        <a href="RegioSubPages/wandelroutes.html">Wandelroutes</a>
+                        <a href="RegioSubPages/fietsroutes.html">Fietsroutes</a>
+                    </div>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="gastenboek.html">Gastenboek</a>
@@ -56,8 +65,8 @@
                 <h6 class="text-uppercase font-weight-bold">Contact</h6>
                 <p>   <i class="fas fa-map-marker-alt"></i> 35 Rue du Château, 33770 Salles, France
                     <br/> <a class="far fa-envelope" href="Villa97@telenet.be"> Villa97@telenet.be</a>
-                    <br/> <i class="fas fa-phone"></i> *TELEFOON NUMMER?*
-                    <br/> <a class="fab fa-facebook-square" href="https://www.facebook.com/PhilandInesVILLA97" target="_blank">
+                    <br/> <i class="fas fa-phone">*TELEFOON NUMMER?*</i>
+                    <br/> <a class="fab fa-facebook-square" href="https://www.facebook.com/PhilandInesVILLA97" target="_blank"></a>
             </div>
         </div>
         <div class="footer-copyright text-center">
