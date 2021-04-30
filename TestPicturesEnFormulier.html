@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!--Container pictures-->
+<h1>Pictures stabile</h1>
+<div class="row">
+<div class="container-picture">
+    <img src="house.jpg" onclick="resizeImage(this)" id="imgOne"/>
+    <br><br><br>
+    <!--Rest size button -->
+    <button onclick="resetImgOne()">Reset size</button>
+</div>
+    <div class="container-two">
+        <img src="house.jpg" onclick="resizeImage(this)" id="imgTwo"/>
+        <br><br><br>
+        <!--Rest size button -->
+        <button onclick="resetImgTwo()">Reset size</button>
+</div>
+    <div class="container-three">
+        <img src="house.jpg" onclick="resizeImage(this)" id="imgThree"/>
+        <br><br><br>
+        <!--Rest size button -->
+        <button onclick="resetImgThree()">Reset size</button>
+    </div>
+    <div class="container-four">
+        <img src="house.jpg" onclick="resizeImage(this)" id="imgFour"/>
+        <br><br><br>
+        <!--Rest size button -->
+        <button onclick="resetImgFour()">Reset size</button>
+    </div>
+</div>
+<!--Images examples-->
+<h1>Picture Hover</h1>
+<img src="house.jpg" id="imgHover"></img><br>
+<img src="house.jpg" id="imgWheel">
+<!--Formulieren-->
+<h1> Standaard formulier 1</h1>
+<div class="col-md-12">
+    <p>Vul de velden correct in en wij contacteren u binnen de 24 uur.</p>
+    <form  action="mail_handler.php" method="post">
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputFirstName">Naam</label>
+                <input type="text" class="form-control" id="inputFirstName">
+            </div>
+            <div class="form-group col-md-3">
+                <label></label>Email</label>
+                <input type="email" class="form-control" id="EmailP">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label></label>Telefoonnummer</label>
+                <input type="number" class="form-control" id="Phonenumber">
+            </div>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label></label>Onderwerp</label>
+                <select name="Subject" id="Subject">
+                    <option value="Klacht">Klacht</option>
+                    <option value="Aanmerking">Home</option>
+                </select>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <textarea id="textA" name="TextA"></textarea>
+                    </div>
+                </div>
+                <div id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                    <input class="submit" type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+</div>
+<div class="content">
+    <h1>Formulier 1</h1>
+        <form class="form-style-9 ">
+
+            <ul>
+                <li>
+                    <input type="text" name="field1" class="field-style field-split align-left" placeholder="Naam" />
+                    <input type="text" name="field2" class="field-style field-split align-right" placeholder="Voornaam" />
+
+                </li>
+                <li>
+                    <input type="date" name="field1" class="field-style field-split align-left" placeholder="Geboortedatum" />
+                    <input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" />
+
+                </li>
+                <li>
+                    <input type="number" name="field3" class="field-style field-split align-left" placeholder="Phone" />
+                </li>
+                <li>
+                    <label>Beschrijving</label>
+                </li>
+                <li>
+                    <textarea name="field5" class="field-style" placeholder="Bericht"></textarea>
+                </li>
+                <li>
+                    <input id="buttontype" type="submit" name="button" onclick="myFunctionClick();" value="Sla op"/>
+                </li>
+            </ul>
+        </form>
+</div>
+
+<h1>Standaard formulier 2</h1>
+<form>
+    <ul class="form-style-1">
+        <li><label>Volledige naam <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+        <li>
+            <label>Email <span class="required">*</span></label>
+            <input type="email" name="field3" class="field-long" />
+        </li>
+        <li>
+            <label>Telefoonnummer <span class="required">*</span></label>
+            <input type="number" name="field3" class="field-long" />
+        </li>
+        <li>
+            <label>Onderwerp</label>
+            <select name="field4" class="field-select">
+                <option value="Klacht">Klacht</option>
+                <option value="Aanmerking">Aanmerking</option>
+                <option value="General Question">General</option>
+            </select>
+        </li>
+        <li>
+            <label>Uw bericht <span class="required">*</span></label>
+            <textarea name="field5" id="field53" class="field-long field-textarea"></textarea>
+        </li>
+        <li>
+            <input type="submit" value="Submit" />
+        </li>
+    </ul>
+</form>
+<h1>Formulier 3</h1>
+<div class="form-style-10">
+    <form>
+        <div class="section"><span>1</span>Volledige naam</div>
+        <div class="inner-wrap">
+            <label>Volledige naam <input type="text" name="field1" /></label>
+        </div>
+
+        <div class="section"><span>2</span>Email & telefoonnummer</div>
+        <div class="inner-wrap">
+            <label>Email <input type="email" name="field3" /></label>
+            <label>Telefoonnummer <input type="text" name="field4" /></label>
+        </div>
+
+        <div class="section"><span>3</span>Onderwerp</div>
+        <div class="inner-wrap">
+            <label>Onderwerp</label>
+            <select name="field4" class="field-select">
+                <option value="Klacht">Klacht</option>
+                <option value="Aanmerking">Aanmerking</option>
+                <option value="General Question">General</option>
+            </select>
+            <label>Uw bericht <span class="required">*</span></label>
+            <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+        </div>
+        <div class="button-section">
+            <input type="submit" name="Sign Up" />
+            <span class="privacy-policy">
+     <input type="checkbox" name="field7">You agree to our Terms and Policy.
+     </span>
+        </div>
+    </form>
+</div>
+<h1>Formulier 4</h1>
+<div class="form-style-2">
+    <div class="form-style-2-heading">Provide your information</div>
+    <form  method="POST" action="data.php" id="contact-form">
+        <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+        <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
+        <label><span>Telephone</span><input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="4" />-<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4"  />-<input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10"  /></label>
+        <label for="field4"><span>Regarding</span><select name="field4" class="select-field">
+            <option value="General Question">General</option>
+            <option value="Advertise">Advertisement</option>
+            <option value="Partnership">Partnership</option>
+        </select></label>
+        <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+
+        <label><span> </span><input type="submit" value="Submit" /></label>
+    </form>
+</div>
+</body>
+</html>
